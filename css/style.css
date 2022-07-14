@@ -31,6 +31,11 @@ body {
     opacity: 0.8;
 }
 
+#section {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+}
+
 #hero {
     background-image: linear-gradient(90deg, rgb(23, 23, 23), rgba(0, 0, 0, 0)), url(../image/banner.jpg);
     background-position: center;
@@ -59,4 +64,75 @@ body {
     color: #e6e1e1;
     font-weight: normal;
     margin-bottom: 1.7rem;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-content {
+    width: 45%;
+}
+
+.section-content h1 {
+    font-size: 2.5rem;
+    line-height: 1.3;
+    margin-bottom: 1rem;
+}
+
+.section-content p {
+    font-size: 17px;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.section-img {
+    width: 450px;
+    height: 480px;
+    position: relative;
+}
+
+.section-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.section-img span {
+    position: absolute;
+    background: #ef233bb3;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.section-img span::before {
+    content: '';
+    position: absolute;
+    background: #f0f0f0;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.section-img span::after {
+    content: '';
+    position: absolute;
+    background: #ef233b62;
+    width: 1.7rem;
+    height: 1.7rem;
+    clip-path: polygon(0 0, 100% 53%, 0 100%);
+    left: 55%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
 }
